@@ -1,0 +1,49 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+
+DirectoryIndex page29806920.html
+
+RewriteEngine On
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =http
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^mobile-preset$ page29944992.html [NC]
+RewriteRule ^mobile-preset/$ page29944992.html [NC]
+
+RewriteRule ^actions4pc$ page30013433.html [NC]
+RewriteRule ^actions4pc/$ page30013433.html [NC]
+
+RewriteRule ^urok_po_obrabotke$ page30038848.html [NC]
+RewriteRule ^urok_po_obrabotke/$ page30038848.html [NC]
+
+RewriteRule ^lk-light-mob-preset$ page30072807.html [NC]
+RewriteRule ^lk-light-mob-preset/$ page30072807.html [NC]
+
+RewriteRule ^lk-autumn-mob-preset$ page30072971.html [NC]
+RewriteRule ^lk-autumn-mob-preset/$ page30072971.html [NC]
+
+RewriteRule ^preset-pc$ page30073168.html [NC]
+RewriteRule ^preset-pc/$ page30073168.html [NC]
+
+RewriteRule ^actions-base$ page30073473.html [NC]
+RewriteRule ^actions-base/$ page30073473.html [NC]
+
+RewriteRule ^kurs-po-obrabotke$ page30073695.html [NC]
+RewriteRule ^kurs-po-obrabotke/$ page30073695.html [NC]
+
+RewriteRule ^urok-po-obrabotke$ page30073750.html [NC]
+RewriteRule ^urok-po-obrabotke/$ page30073750.html [NC]
+
+RewriteRule ^urok2$ page30073899.html [NC]
+RewriteRule ^urok2/$ page30073899.html [NC]
+
+RewriteRule ^actions-new-2022$ page30073968.html [NC]
+RewriteRule ^actions-new-2022/$ page30073968.html [NC]
+
+RewriteRule ^members/ ma_start.html [NC]
+
+
